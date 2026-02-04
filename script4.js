@@ -21,18 +21,32 @@
 // }, 1500); // dinner time
 
 // }, 2000); // homework tim
-function finishHomework(callback ) {
-    console.log("starting homework...");
+// function finishHomework(callback ) {
+//     console.log("starting homework...");
+//     settimeout(()=>{
+//         console.log("Homework done!");
+//         Callback();
+//     },1500);
+// }
+//  function gotoPlayground(){
+//     console.log("Going to the Playground!");
+//  } 
+//  finishHomework(()=>{
+//     eatdinner(()=>{
+//         gotoPlayground();
+//     });
+//  });
+const p=new promise ((res,rej)=>{
+    let done=false
     settimeout(()=>{
-        console.log("Homework done!");
-        Callback();
-    },1500);
-}
- function gotoPlayground(){
-    console.log("Going to the Playground!");
- } 
- finishHomework(()=>{
-    eatdinner(()=>{
-        gotoPlayground();
-    });
- });
+        if(done){
+            res("work is done!!")
+        }else{
+            rej("work is not done")
+        }
+        },5000)
+    })
+    p.then
+
+
+ 
