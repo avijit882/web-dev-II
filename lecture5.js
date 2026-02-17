@@ -68,4 +68,15 @@ if (age<18){
 }
 console.log("Last Line")
 
+async function get(data){
+    const reponse=await fetch("")
+    const data=await Response.json()
+    data.products.foreach((product)=>{
+        console.log(product.title)
+    })
+
+}
+
+fetchdata()
+
  
