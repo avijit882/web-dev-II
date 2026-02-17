@@ -1,0 +1,100 @@
+/* Reset default spacing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body{
+    background-color: #3269b1;
+}
+
+/* Header */
+header{
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Container holding both cards */
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+/* Card style */
+.card{
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.card h2{
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Labels */
+label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input, select, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Textarea height */
+textarea{
+    height: 70px;
+    resize: none;
+}
+
+/* Buttons */
+button{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button hover */
+button:hover{
+    background-color: #357abd;
+}
+
+/* Clear button area */
+.top-buttons button{
+    background-color: #e74c3c;
+}
+
+.top-buttons button:hover{
+    background-color: #c0392b;
+}
+
+/* Event list */
+#eventList{
+    margin-top: 15px;
+}
