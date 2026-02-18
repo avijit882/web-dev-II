@@ -68,7 +68,7 @@ if (age<18){
 }
 console.log("Last Line")
 
-async function get(data){}
+async function get(data){
     try{
 
     const reponse=await fetch("")
@@ -83,8 +83,11 @@ async function get(data){}
 
 }catch(err){
     console.log(err)
+}finally{
+    console.log("finally block")
 }
 
-fetchdata()
+}
+getdata()
 
  
