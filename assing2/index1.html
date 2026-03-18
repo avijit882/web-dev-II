@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Tracker</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌦 Weather Tracker</h1>
+
+        <!-- Form -->
+        <form id="weatherForm">
+            <input type="text" id="city" placeholder="Enter city name..." required>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Weather Display -->
+        <div id="weatherDisplay" class="card">
+            <p>Enter a city to get weather 🌍</p>
+        </div>
+
+        <!-- History -->
+        <div class="history-section">
+            <h3>📍 Search History</h3>
+            <ul id="historyList"></ul>
+        </div>
+
+        <!-- Console Output -->
+        <div class="console">
+            <h3>🖥 Console</h3>
+            <div id="consoleOutput"></div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
